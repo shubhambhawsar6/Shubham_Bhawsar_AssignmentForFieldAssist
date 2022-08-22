@@ -1,0 +1,16 @@
+<h1 align="center"> Table using Jason Server API</h1>
+<hr>
+
+<table id="employees" border="1" align="center">
+  <tr>
+    <th *ngFor="let col of columns">
+      {{col}}
+    </th>
+  </tr>
+  <tr *ngFor="let employees of employee" >
+    <td> {{employees.id}}</td>
+    <td> {{employees.Name}}</td>
+    <td> {{employees.WorkimgTime}}</td>
+  </tr>
+
+</table>
